@@ -150,12 +150,104 @@ public:
   }
 };
 
+int action(string line)
+{
+  cout<< line<<endl; //para debuggear
+    int ac,ac2;
+    ac2=ac=0;
+    string line2;
+    if(line == "read")
+    {
+      ac = 1;
+      cout<<"\n>> ";
+      cin>>line2;
+      if(line2 == "over")
+      {
+        ac2=60;
+      }
+      else if(line2 == "page")
+      {
+        ac2=70;
+      }
+    }
+    else if(line == "write")
+    {
+      ac = 2;
+    }
+
+    else if(line == "walk")
+    {
+      ac = 3;
+      cout<<"\n>> ";
+      cin>>line2;
+      if(line2 == "straight")
+      {
+        ac2=20;
+      }
+      else if(line2 == "right")
+      {
+        ac2=30;
+      }
+      else if(line2 == "left")
+      {
+        ac2=40;
+      }
+      else if(line2 == "back")
+      {
+        ac2=50;
+      }
+    }
+/*
+    else if()
+    {
+
+    }*/
+    else
+    {
+      ac = 99;
+    }
+
+
+    return ac+ac2;
+}
+
 int main()
 {
   April player;
   NoteBook blue;
   Backpack bp;
 
-  
+  string act;
+  int elec;
+
+  cout<<"> ";
+  cin>>act;
+
+  elec = action(act);
+  cout<<elec;
+
+  switch(elec)
+  {
+    case 61:
+      cout<<"\nyou read over";
+      break;
+    case 71:
+      cout<<"\nyou read a page";
+      break;
+    case 2:
+      cout<<"\nyou write";
+      break;
+    case 23:
+        cout<<"\nyou walk straight";
+        break;
+    case 33:
+        cout<<"\nyou walk right";
+        break;
+    default:
+      cout<<"prueba";
+      break;
+  }
+
+
   cout<<"\n";
 }
