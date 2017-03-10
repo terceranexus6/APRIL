@@ -1,0 +1,36 @@
+#!/bin/bash
+clear
+
+echo ""
+echo " _____                           _        "
+echo "|  __ \                         | |       "
+echo "| |__) | __ ___  _   _  ___  ___| |_ ___  "
+echo "|  ___/ '__/ _ \| | | |/ _ \/ __| __/ _ \ "
+echo "| |   | | | (_) | |_| |  __/ (__| || (_) |"
+echo "|_|   |_|  \___/ \__, |\___|\___|\__\___/ "
+echo "                  __/ |                   "
+echo "                 |___/                    "
+echo ""
+echo ">>April es una aventura de texto, un juego "
+echo "  sin gráficos que desarrolla una historia"
+echo "  interactiva a través de terminal. C++"
+echo "------------------------------------------"
+echo ">>La historia se desarrolla alrededor de  "
+echo "  una chica llamada April, la cual "
+echo "  despierta en una extraña habitación."
+echo "  Para no hacer spoiler, la historia  "
+echo "  completa se reserva a los programadores."
+echo "  :)"
+echo "------------------------------------------"
+echo ">>El proyecto intenta ser un experimento"
+echo "  colaborativo, en el que el juego está"
+echo "  en constante evolución gracias a la "
+echo "  comunidad."
+echo "------------------------------------------"
+echo ">>El juego funciona con una serie de puzzles"
+echo "  y se necesita manipular objetos y manejar"
+echo "  comandos."
+echo "--------------------------"
+read -p"diap: " NUM
+
+./$NUM.sh
